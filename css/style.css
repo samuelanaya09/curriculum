@@ -1,0 +1,359 @@
+/*LIBRARY OF FONTS*/
+@font-face {
+  font-family: ubuntutall;
+  src: url(../fonts/Lato-Bold.ttf) format(truetype);
+}
+
+@font-face {
+  font-family: ubuntumedium;
+  src: url(../fonts/Lato-Regular.ttf) format(truetype);
+}
+
+@font-face {
+  font-family: ubuntusmall;
+  src: url(../fonts/Lato-Light.ttf) format(truetype);
+}
+
+@font-face {
+  font-family: ubuntublack;
+  src: url(../fonts/Lato-Black.ttf) format(truetype);
+}
+
+@font-face {
+  font-family: monserratextra;
+  src: url(../fonts/Montserrat-ExtraLight.ttf) format(truetype);
+}
+
+@font-face {
+  font-family: monserratmedium;
+  src: url(../fonts/Montserrat-Medium.ttf) format(truetype);
+}
+
+/*PAGE PROPERTIES*/
+#container {
+  height: 990px;
+  width: 680px;
+  margin: auto;
+  border: 4px solid rgb(199, 199, 199);
+  display: flex;
+  flex-direction: row;
+  transition: 400ms linear;
+}
+
+.BOX {
+  padding: 20px;
+  height: auto;
+}
+
+.BOX:nth-child(1) {
+  width: 200px;
+  background-color: white;
+}
+
+.BOX:nth-child(2) {
+  background: rgb(235, 235, 235);
+  width: 500px;
+}
+
+img {
+  width: 100px;
+  border-radius: 100px;
+  transition: 500ms;
+}
+
+img:hover {
+  width: 110px;
+  box-shadow: 0 0 3px 3px rgb(124, 124, 124);
+}
+
+.box_profile_name1 {
+  display: none;
+  justify-content: stretch;
+}
+
+.box_profile_name {
+  display: grid;
+}
+
+.line {
+  width: 100px;
+  height: 1px;
+  margin: 0px;
+  background-color: gray;
+  border-color: transparent;
+
+}
+
+h1 {
+  font-family: ubuntutall
+}
+
+.profesion {
+  font-family: monserratextra;
+  letter-spacing: 3px;
+  color: darkslategrey;
+}
+
+.js,
+.html,
+.css {
+  margin: 0px 0px 40px 0px;
+  height: 2px;
+  background: darkslategray;
+  width: 300px;
+  border: transparent;
+  border-radius: 2px;
+}
+
+h2 {
+  font-family: monserratextra;
+  font-size: 0.8em;
+  letter-spacing: 2px;
+  color: gray;
+}
+
+h3 {
+  font-family: monserratextra;
+  font-size: 1em;
+  letter-spacing: 2px;
+  color: gray;
+}
+
+ul,
+h5 {
+  font-family: ubuntublack;
+  font-size: 3.3mm;
+  transition: 100ms;
+  color: rgb(78, 78, 78);
+}
+
+
+
+.iconos {
+  margin-right: 10px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flex {
+  width: 200px;
+  height: 70px;
+  display: flex;
+  padding: 20px 0px 0px 0px;
+}
+
+.text_contact h5 {
+  margin: 2px 0px 7px 0px;
+  width: 160px;
+  height: 15px;
+}
+
+.box_habilities,
+.box_experience,
+.box_education,
+.box_knowing {
+  margin-top: 35px;
+  transition: 400ms linear;
+}
+
+.box_habilities {order: 1;}
+.box_experience {order: 2;}
+.box_education {order: 3;}
+.box_knowing {order: 4;}
+
+
+/*mediaqueries*/
+
+@media screen and (min-width: 1025px) {
+  #container {
+    height: auto;
+    width: 900px;
+    margin: auto;
+    border: 3px solid rgb(199, 199, 199);
+    display: flex;
+    flex-direction: row;
+    transition: 800ms linear;
+  }
+
+  .BOX:nth-child(1) {
+    width: 200px;
+    background-color: white;
+    padding-top: 0px;
+  }
+
+  .BOX:nth-child(2) {
+    width: 700px;
+    background-color: rgb(235, 235, 235);
+    padding-top: 0px;
+  }
+
+  .foto {
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  #container {
+    height: 720px;
+    width: 1450px;
+    margin: auto;
+    border: 3px solid rgb(199, 199, 199);
+    display: flex;
+    flex-direction: row;
+    transition: 400ms linear;
+  }
+
+  .BOX:nth-child(1) {
+    width: 200px;
+    background-color: white;
+    padding-top: 0px;
+  }
+
+  .BOX:nth-child(2) {
+    width: 1250px;
+    height: auto;
+    background-color: rgb(235, 235, 235);
+    display: grid;
+    grid-template-columns: repeat(2, 25%);
+  }
+
+  .box_profile_name2 {
+    justify-content: stretch;
+    grid-column: 1/3;
+    margin: 0;
+  }
+
+  .foto {
+    padding: 40px;
+    width: 100px;
+  }
+
+  .box_habilities,
+  .box_experience,
+  .box_education,
+  .box_knowing {
+    margin: 0px;
+    transition: 400ms linear;
+
+  }
+
+  .box_habilities {order: 1;}
+  .box_experience {order: 3;}  
+  .box_education {order: 2;}
+  .box_knowing {order: 4;}
+}
+
+
+
+
+@media screen and (max-width: 575px) {
+  #container {
+    height: auto;
+    width: 350px;
+    margin: auto;
+    border: 3px solid rgb(199, 199, 199);
+    display: flex;
+    flex-direction: column;
+    transition: 400ms linear;
+  }
+
+  .BOX:nth-child(1) {
+    width: auto;
+  }
+
+  .BOX:nth-child(2) {
+    width: auto;
+    background-color: white;
+    padding-top: 0px;
+  }
+
+  .box_profile_name2 {
+    display: none;
+  }
+
+  .box_profile_name1 {
+    display: grid;
+    font-size: 13px;
+  }
+
+  .box_information_profile {
+    width: 200px;
+  }
+
+  .foto {
+    columns: 2;
+  }
+}
+
+@media screen and (max-width: 562px) {
+  #container {
+    height: auto;
+    width: 380px;
+    margin: auto;
+    border: 3px solid rgb(199, 199, 199);
+    display: flex;
+    flex-direction: column;
+    transition: 400ms linear;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  #container {
+    height: auto;
+    width: 310px;
+    margin: 10px;
+    border: 3px solid rgb(199, 199, 199);
+    display: flex;
+    flex-direction: column;
+    transition: 400ms linear;
+  }
+
+  .box_profile_name1 {
+    display: table-cell;
+    transition: .3s linear;
+    font-size: 15px;
+    padding-left: 40px;
+  }
+
+  .box_profile_name1 {
+    font-size: 11px;
+    padding-left: 15px;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  #container {
+    height: auto;
+    width: 290px;
+    margin: auto;
+    border: 3px solid rgb(199, 199, 199);
+    display: flex;
+    flex-direction: column;
+    transition: 400ms linear;
+  }
+
+  .box_profile_name1 {
+    font-size: 10px;
+    padding-left: 15px;
+  }
+
+}
+
+@media screen and (max-width: 282px) {
+  #container {
+    height: auto;
+    width: 250px;
+    margin: auto;
+    border: 3px solid rgb(199, 199, 199);
+    display: flex;
+    flex-direction: column;
+    transition: 400ms linear;
+  }
+
+  .box_profile_name1 {
+    font-size: 10px;
+    padding-left: 15px;
+  }
+}
